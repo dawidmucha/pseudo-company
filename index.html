@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
 		<meta charset="utf-8">
 		<title>OrganIza</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
 		<main>
-			<div id='logo'>
+			<div id='jumbotron'>
+				<div id='logo'>
 					<img src='./res/logo.png' />
+				</div>
+
+				<nav>
+					<ul id='navbar'>
+						<li class='navbar-element'><button>O mnie</button></li>
+						<li class='navbar-element'><button>Recenzje<buttona></li>
+						<li class='navbar-element'><button>Usługi</button></li>
+						<li class='navbar-element'><button>Kontakt</button></li>
+					</ul>
+				</nav>
 			</div>
 
-			<nav>
-				<ul id='navbar'>
-					<li class='navbar-element'><button>O mnie</button></li>
-					<li class='navbar-element'><button>Recenzje<buttona></li>
-					<li class='navbar-element'><button>Usługi</button></li>
-					<li class='navbar-element'><button>Kontakt</button></li>
-				</ul>
-			</nav>
-
-			<article>
+			<article id='static'>
 				<h1>Czym się zajmuję?</h1>
 				<p>
 					Jestem Iza, zajmuję się non culpa velit est duis commodo nisi sunt est tempor dolore commodo culpa. Ut magna esse id in deserunt et aliqua. Ipsum aliquip excepteur tempor consectetur est esse ullamco mollit adipisicing. Pariatur amet do consequat exercitation velit.
@@ -35,18 +37,20 @@
 
 			<article>
 				<h1>Recenzje</h1>
-				<section>
-					<h2>Andrezej Marciniak</h2>
-					<p>Ad ipsum non quis nisi.</p>
-				</section>
-				<section>
-					<h2>Małgorzata Biała</h2>
-					<p>Cupidatat anim do adipisicing ex.</p>
-				</section>
-				<section>
-					<h2>Mariola Widłowska</h2>
-					<p>Dolor tempor ad officia mollit.</p>
-				</section>
+				<div id='flexcontainer'>
+					<section class='flexitem'>
+						<h2>Andrzej Marciniak</h2>
+						<p>Ad ipsum non quis nisi. Labore labore ipsum consequat qui nisi sint. Amet aute aliqua nisi qui commodo cupidatat culpa ad irure. Fugiat mollit laboris Lorem dolore pariatur sit officia. Ullamco proident incididunt deserunt veniam nisi incididunt ad dolor ipsum pariatur ea sunt esse. Fugiat mollit ut veniam Lorem elit cupidatat ea occaecat Lorem ullamco ad dolore amet.</p>
+					</section>
+					<section class='flexitem'>
+						<h2>Małgorzata Biała</h2>
+						<p>Cupidatat anim do adipisicing ex. Est id enim non sint mollit fugiat irure Lorem occaecat aute ut reprehenderit consectetur dolore. Nisi non deserunt quis consequat sunt. Quis occaecat non proident sint nostrud sint cillum. Ipsum cupidatat aliquip sunt culpa voluptate pariatur nisi occaecat nostrud tempor et sit nisi.</p>
+					</section>
+					<section class='flexitem'>
+						<h2>Mariola Widłowska</h2>
+						<p>Dolor tempor ad officia mollit. Proident laborum excepteur amet cillum ad excepteur commodo adipisicing cupidatat deserunt laboris. Proident elit veniam adipisicing sunt nisi nostrud ut ullamco. Incididunt occaecat culpa Lorem eu cillum nostrud labore adipisicing esse est est duis. Ullamco dolore cupidatat labore tempor. Occaecat incididunt laborum in cillum nisi mollit eiusmod amet aliquip consectetur proident. Amet fugiat labore incididunt magna.</p>
+					</section>
+				</div>
 			</article>
 
 			<article>
@@ -102,5 +106,7 @@
 				</p>
 			</article>
 		</main>
+
+		<script src='script.js'></script>
 	</body>
 </html>
