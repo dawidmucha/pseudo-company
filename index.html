@@ -17,15 +17,16 @@
 
 				<nav>
 					<ul id='navbar'>
-						<li class='navbar-element'><button>O mnie</button></li>
-						<li class='navbar-element'><button>Recenzje<buttona></li>
-						<li class='navbar-element'><button>Usługi</button></li>
-						<li class='navbar-element'><button>Kontakt</button></li>
+						<li class='navbar-element'><a href='#omnie'><button>O mnie</button></a></li>
+						<li class='navbar-element'><a href='#recenzje'><button>Recenzje</button></a></li>
+						<li class='navbar-element'><a href='#uslugi'><button>Usługi</button></a></li>
+						<li class='navbar-element'><a href='#kontakt'><button>Kontakt</button></a></li>
 					</ul>
 				</nav>
 			</div>
 
-			<article id='static'>
+			<article>
+				<span id='omnie'></span>
 				<h1>Czym się zajmuję?</h1>
 				<p>
 					Jestem Iza, zajmuję się non culpa velit est duis commodo nisi sunt est tempor dolore commodo culpa. Ut magna esse id in deserunt et aliqua. Ipsum aliquip excepteur tempor consectetur est esse ullamco mollit adipisicing. Pariatur amet do consequat exercitation velit.
@@ -36,6 +37,7 @@
 			</article>
 
 			<article>
+				<span id='recenzje'></span>
 				<h1>Recenzje</h1>
 				<div id='flexcontainer'>
 					<section class='flexitem'>
@@ -54,6 +56,7 @@
 			</article>
 
 			<article>
+				<span id='uslugi'></span>
 				<h1>Usługi</h1>
 				<section>
 					<h2>Analiza i wycena usługi</h2>
@@ -88,23 +91,23 @@
 			</article>
 
 			<article>
+				<span id='kontakt'></span>
 				<h1>Kontakt</h1>
-				<section>
-					<p>Telefon: 393 384 503</p>
-					<p>Email: organiza@gmail.com</p>
-					<p>Facebook: @organiza</p>
-					<p>
-						<span>Biuro: ul. Jakaśtam 12</span>
-						<!-- google maps embed -->
-						<!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=al.%20Jana%20Paw%C5%82a%20II%2046%2F48%2C%2000-148%20Warszawa&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">pureblack.de</a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div> -->
-					</p>
-				</section>
-				<p>
-					<span>Instagram: @organiza</span>
-					<!-- instagram embed -->
-					<!-- <div><iframe src="https://snapwidget.com/embed/652470" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:480px; height:480px"></iframe></div> -->
+				<p id='contact'>
+					Telefon: 393 384 503<br>
+					Email: organiza@gmail.com<br>
+					Facebook: @organiza<br>
+					Biuro: ul. Jakaśtam 12<br>
 				</p>
+				<div>
+					<!-- google maps embed -->
+					<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=al.%20Jana%20Paw%C5%82a%20II%2046%2F48%2C%2000-148%20Warszawa&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div>
+				</div>
 			</article>
+
+			<footer>
+				design by Dawid Mucha
+			</footer>
 		</main>
 
 		<script src='script.js'></script>
